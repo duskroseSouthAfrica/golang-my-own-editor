@@ -117,7 +117,7 @@ func main() {
 				if writeErr != nil {
 					dialog.ShowError(fmt.Errorf("failed to save file: %w", writeErr), myWindow)
 					currentFilePath = ""
-					myWindow.SetTitle("Go Text Editor")
+					myWindow.SetTitle("Go Text Editor - Dusk Rose")
 				}
 			}, myWindow)
 		} else {
