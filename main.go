@@ -111,7 +111,7 @@ func main() {
 				defer uc.Close()
 
 				currentFilePath = uc.URI().Path()
-				myWindow.SetTitle("Go Text Editor - " + currentFilePath)
+				myWindow.SetTitle("Go Text Editor" + currentFilePath)
 
 				_, writeErr := uc.Write([]byte(editor.Text))
 				if writeErr != nil {
